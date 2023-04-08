@@ -1,0 +1,19 @@
+api:
+  cep:
+    username: admin
+    senha: admin123
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      group-id: group_id
+
+topic:
+  endereco-client: topic_endereco_cliente
+
+server:
+  port: 8080
+
